@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3820911112247853751}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4471213453439401006}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4471213453439401006}
   - component: {fileID: 2424641930643064}
-  - component: {fileID: 3001987758033168482}
+  - component: {fileID: 2487049644343876902}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -127,8 +127,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb970f80b7a5400409d26f20e12d878c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 3001987758033168482}
---- !u!143 &3001987758033168482
+  characterController: {fileID: 2487049644343876902}
+  isUpdatePosition: 0
+  isUpdateScore: 0
+--- !u!143 &2487049644343876902
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,4 +147,4 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}

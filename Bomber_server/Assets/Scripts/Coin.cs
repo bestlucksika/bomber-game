@@ -23,9 +23,11 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
+        Debug.Log("OnTriggerEnter");
         var player = collider.GetComponent<PlayerController>();
         if (player != null)
         {
+            Debug.Log("player");
             player.GetCoin();
             Delete();
         }
