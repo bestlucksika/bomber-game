@@ -299,6 +299,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
+--- !u!1 &1759281706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1759281708}
+  - component: {fileID: 1759281707}
+  m_Layer: 0
+  m_Name: BombController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1759281707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759281706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ca470053a1027b4d8ffb51f39d82e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 2645187797609047628, guid: 004b3dbfcadb78243ab459af1b6229f8, type: 3}
+  newBombs: []
+--- !u!4 &1759281708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759281706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.887761, y: 1.0075314, z: -1.1778641}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1881536977
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serverController: {fileID: 1881536980}
   coinController: {fileID: 1951814656}
+  bombController: {fileID: 1759281707}
 --- !u!114 &1881536980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +406,7 @@ MonoBehaviour:
   server: {fileID: 1881536979}
   playerControllerPrefab: {fileID: 2424641930643064, guid: 4fd611be7024bc641bf8633b9185a243, type: 3}
   coinController: {fileID: 1951814656}
+  bombController: {fileID: 1759281707}
   spawnArea:
     size: {x: 8, y: 8}
 --- !u!1 &1951814655
